@@ -1,3 +1,4 @@
+import 'package:cots/modules/login/views/login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../design_system/color.dart';
@@ -73,7 +74,7 @@ class OnboardingPage extends StatelessWidget {
                     minimumSize: const Size(double.infinity, 48),
                   ),
                   onPressed: () {
-                    Get.toNamed('/login'); // Navigasi ke halaman login
+                    Get.to(() => LoginPage()); // Navigasi ke LoginView class
                   },
                   child: Text(
                     "Masuk",
