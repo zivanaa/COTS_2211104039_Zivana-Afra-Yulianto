@@ -1,3 +1,4 @@
+import 'package:cots/modules/homepage/views/homepage_view.dart';
 import 'package:cots/modules/onboarding/views/onboarding_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Onboarding App',
       debugShowCheckedModeBanner: false,
-      home: OnboardingPage(),
+      home: Homepage(),
     );
   }
 }
